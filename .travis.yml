@@ -1,0 +1,13 @@
+language: node-js
+node-js:
+  - "7"
+  - "8"
+before_install:
+  - cd src/ex1
+  - npm install -g npm@^5
+  - npm install
+script:
+  - npm test
+cache:
+  directories:
+    - "node_modules"
