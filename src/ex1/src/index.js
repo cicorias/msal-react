@@ -5,6 +5,12 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+/// Prevents refresh 
+if (module.hot) {
+    module.hot.accept(); 
+}
+
 initialize();
 
 function initialize() {
