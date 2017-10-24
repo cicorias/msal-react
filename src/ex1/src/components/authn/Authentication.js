@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Authn extends Component {
+export class Authentication extends Component {
   constructor(){
     super();
     this.state = { authnStatus:  { hasRun: false, loggedOn : false, token: '' } };
@@ -21,11 +21,9 @@ class Authn extends Component {
       </div>
     );
   }
-
 }
 
-const Showit = (obj) => {
+export const Showit = (obj) => {
   return <div>{JSON.stringify(obj)}</div>
 }
 
-export default Authn;
